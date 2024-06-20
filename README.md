@@ -1,7 +1,7 @@
 # visual_dart_test
 
 #Install cypress & plugins cucumber
-1. npm install cypress --save-dev
+1. npm install -D cypress@13.11.0
 2. npm install --save-dev cypress-file-upload
 3. npm install --save-dev cypress @badeball/cypress-cucumber-preprocessor
 4. npm install @bahmutov/cypress-esbuild-preprocessor --save-dev

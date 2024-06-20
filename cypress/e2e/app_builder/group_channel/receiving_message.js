@@ -5,10 +5,14 @@ Given('I logged in as the user who received the message', () => {
   cy.wait(5000); // Wait for 5 seconds to ensure the page is fully loaded
 });
 
-When('I view message and replied {string}',(message) => {
-    cy.get('[tabindex="4"] > .sendbird-channel-preview__content > .sendbird-channel-preview__content__upper').click();
-    cy.get('#sendbird-message-input-text-field').type(message);
-});
+When('I view the message and reply with {string}', (message) => {
+    cy.get('[tabindex="4"] > .sendbird-channel-preview__content > .sendbird-channel-preview__content__upper')
+      .should('be.visible')
+      .click();
+    cy.get('#sendbird-message-input-text-field')
+      .should('be.visible')
+      .type(message);
+  });
 
 Then('I will see a success send a message', () => {
     cy.get('[data-testid="sendbird-message-input-send-button"]')
