@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.js', '.jsx', '.ts', '.md', '.tsx'],
     fallback: {
       "crypto": require.resolve("crypto-browserify"),
       "stream": require.resolve("stream-browserify"),
