@@ -14,34 +14,27 @@
 1. git clone git@github.com:WahyuElfan/visual_dart_test.git
 
 #Structure Folder
-├── .github/
-│   ├── workflows/
-│   │   └── cypress.yml
-├── cypress/
-│   ├── download/
-│   ├── e2e/
-│   │   ├── app_builder/
-|   |   |   ├── group_channel/
-|   |   |   |   ├── create_group_channel.feature
-│   │   │   │   ├── create_group_channel.js
-|   |   |   |   ├── receiving_message.feature
-│   │   │   │   ├── receiving_message.js
-|   |   |   |   ├── upload_file.feature
-│   │   │   │   ├── upload_file.js
-│   │   │   ├── setup_user/
-│   │   │   │   ├── setup_user.feature
-│   │   │   │   ├── setup_user.js
-│   ├── fixtures/
-│   │   └── example.json
-│   ├── plugins/
-│   │   └── index.js
-│   ├── support/
-│   │   ├── e2e.js
-│   │   ├── commands.js
-│   ├── hooks/
-├── node_modules/
-├── cypress.config.js
-├── package.json
-├── package-lock.json
-├── README.md
-├── webpack.config.js
+cypress
+ ┣ downloads
+ ┣ e2e
+ ┃ ┗ app_builder
+ ┃ ┃ ┣ group_channel
+ ┃ ┃ ┃ ┣ create_group_channel.feature
+ ┃ ┃ ┃ ┣ create_group_channel.js
+ ┃ ┃ ┃ ┣ receiving_message.feature
+ ┃ ┃ ┃ ┣ receiving_message.js
+ ┃ ┃ ┃ ┣ upload_file.feature
+ ┃ ┃ ┃ ┗ upload_file.js
+ ┃ ┃ ┗ setup_user
+ ┃ ┃ ┃ ┣ setup_user.feature
+ ┃ ┃ ┃ ┗ setup_user.js
+ ┣ fixtures
+ ┃ ┣ example.json
+ ┃ ┗ image.PNG
+ ┣ plugins
+ ┃ ┗ index.js
+ ┣ screenshots
+ ┣ support
+ ┃ ┣ commands.js
+ ┃ ┗ e2e.js
+ ┗ videos
