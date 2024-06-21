@@ -1,8 +1,8 @@
 const { When, Then, Given } = require("@badeball/cypress-cucumber-preprocessor");
 
 Given('I logged in as the user who received the message', () => {
-  cy.visit('https://sendbird-uikit-react.netlify.app/group_channel?appId=37C8DB25-8B44-435F-A528-5BA9B9965FD0.&userId=us2&nickname=us2');
-  cy.wait(5000); // Wait for 5 seconds to ensure the page is fully loaded
+  cy.visit('https://sendbird-uikit-react.netlify.app/group_channel?appId=37C8DB25-8B44-435F-A528-5BA9B9965FD0&userId=us2&nickname=us2');
+  cy.wait(5000); //wait 5 seconds to load the page
 });
 
 When('I view the message and reply with {string}', (message) => {
